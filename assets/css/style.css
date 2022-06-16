@@ -1,3 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: bisque;
+    display: grid;
+    grid-template-areas: "header header"
+                         "main"
+                        "footer footer footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: black;
+}
+
+.main{
+    grid-area: main;
     background-color: aqua;
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+
 }
